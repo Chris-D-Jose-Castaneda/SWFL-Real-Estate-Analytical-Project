@@ -34,7 +34,9 @@ Please refer to the _SouthWest Florida Quantitaive Analysis of Urban Housing Mar
 
 Please feel free to use this repository for a data science or quantitative research projects. Don't forget to ⭐ this repository :)
 
-- Chris
 
+
+Best, 
+Chris 
 
 
