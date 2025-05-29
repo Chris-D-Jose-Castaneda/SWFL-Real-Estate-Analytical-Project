@@ -2,11 +2,11 @@
 
 Welcome to the Home Buying Advisor project—a comprehensive analytics suite built to help prospective buyers navigate the complex housing markets of Southwest Florida. By combining automated data collection, rigorous statistical modeling, and an interactive R Shiny dashboard, this tool delivers timely insights into property prices, market trends, and affordability metrics.
 
-🎯 Project Scope
+### 🎯 Project Scope
 
 This repository covers the end-to-end workflow for generating actionable real estate insights. We begin with scraping detailed property listings from Realtor.com, followed by precise geocoding of addresses. I create an ETL pipeline then cleann and wrangle the raw data by looking at important features, while integrating economic indicators including county house price indices and mortgage rates. Advanced statistical and machine learning models quantify price drivers and produce short-term forecasts. Finally, an R Shiny application presents interactive maps, trend charts, and affordability calculators to guide homebuyers in a changing market. Remember to have all packages installed prior to running
 
-📁 File Descriptions
+### 📁 File Descriptions
 
 1) updated_mls_scraper.py - Implements a robust Selenium-based scraper that collects listing details—price, beds, baths, square footage, and more—from Realtor.com. It writes the raw output to april13_listings_raw_listings.csv for further processing **I renamed this to Raw_SWFL_Data** but this was the original date I extracted the data from in 2025. 
 
@@ -26,7 +26,11 @@ This repository covers the end-to-end workflow for generating actionable real es
 
 9) SWFL_Data_Cleaned_Final_Version.csv - The final, cleaned, and feature-engineered dataset used for all analyses and visualizations. It includes merged economic variables, outlier treatment, and derived metrics.
 
-🌟 Cont'd
+### 📄 Report
+Please refer to the _SouthWest Florida Quantitaive Analysis of Urban Housing Markets.pdf_ for the complete final report of my analysis. This provides more context and articulates the challenges and results faced when working on this project. 
+
+
+### 🌟 Cont'd
 
 Please feel free to use this repository for a data science or quantitative research projects. Don't forget to ⭐ this repository :)
 
