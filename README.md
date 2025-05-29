@@ -8,23 +8,23 @@ This repository covers the end-to-end workflow for generating actionable real es
 
 📁 File Descriptions
 
-updated_mls_scraper.py - Implements a robust Selenium-based scraper that collects listing details—price, beds, baths, square footage, and more—from Realtor.com. It writes the raw output to april13_listings_raw_listings.csv for further processing.
+1) updated_mls_scraper.py - Implements a robust Selenium-based scraper that collects listing details—price, beds, baths, square footage, and more—from Realtor.com. It writes the raw output to april13_listings_raw_listings.csv for further processing **I renamed this to Raw_SWFL_Data** but this was the original date I extracted the data from in 2025. 
 
-Zipcode.py - Normalizes and geocodes property addresses using Geopy’s Nominatim service, with a U.S. Census API fallback. The script enriches each listing with precise latitude and longitude, saving results to Final_SWFL_With_Fallback_Coords.csv.
+2) Zipcode.py - Normalizes and geocodes property addresses using Geopy’s Nominatim service, with a U.S. Census API fallback. The script enriches each listing with precise latitude and longitude, saving results to Final_SWFL_With_Fallback_Coords.csv.
 
-Data Cleaning.ipynb - Executes the ETL pipeline: it ingests raw CSV files, sanitizes and parses text fields, engineers derived variables (e.g., ppsf, age), handles outliers, and merges economic data. The cleaned dataset is exported as SWFL_Data_Cleaned_Final_Version.csv.
+3) Data Cleaning.ipynb - Executes the ETL pipeline: it ingests raw CSV files, sanitizes and parses text fields, engineers derived variables (e.g., ppsf, age), handles outliers, and merges economic data. The cleaned dataset is exported as SWFL_Data_Cleaned_Final_Version.csv.
 
-Economic_Parameters.ipynb - Retrieves and processes macroeconomic time series—including 30-year fixed mortgage rates (MORTGAGE30US.csv), SPY, DJIA, and county HPIs (Collier_County_Price_Index.csv, Lee_County_Price_Index.csv)—and visualizes their historical trends.
+4) Economic_Parameters.ipynb - Retrieves and processes macroeconomic time series—including 30-year fixed mortgage rates (MORTGAGE30US.csv), SPY, DJIA, and county HPIs (Collier_County_Price_Index.csv, Lee_County_Price_Index.csv)—and visualizes their historical trends.
 
-Modeling.ipynb - Explores predictive modeling approaches: OLS regression with interaction terms, regularized regressions (Ridge/Lasso), ARIMA forecasting, and machine learning (Random Forest, XGBoost). It benchmarks models using metrics like R² and RMSE and generates                          diagnostic plots.
+5) Modeling.ipynb - Explores predictive modeling approaches: OLS regression with interaction terms, regularized regressions (Ridge/Lasso), ARIMA forecasting, and machine learning (Random Forest, XGBoost). It benchmarks models using metrics like R² and RMSE and generates                          diagnostic plots.
 
-app.R - A R Shiny application that loads cleaned data and economic series to provide an interactive dashboard with map-based listings visualization, historical trend charts, forecast results, and an affordability calculator for users to simulate different scenarios.
+6) app.R - A R Shiny application that loads cleaned data and economic series to provide an interactive dashboard with map-based listings visualization, historical trend charts, forecast results, and an affordability calculator for users to simulate different scenarios.
 
-Raw_SWFL_Data.csv - Contains the initial, unprocessed data directly exported from the scraper, including all original listing fields for transparency and debugging.
+7) Raw_SWFL_Data.csv - Contains the initial, unprocessed data directly exported from the scraper, including all original listing fields for transparency and debugging.
 
-Final_SWFL_With_Fallback_Coords.csv - Intermediate output showing the dataset after geocoding, complete with latitude and longitude values for each listing. This is the output file after running the python file w/ Zipcodes. 
+8) Final_SWFL_With_Fallback_Coords.csv - Intermediate output showing the dataset after geocoding, complete with latitude and longitude values for each listing. This is the output file after running the python file w/ Zipcodes. 
 
-SWFL_Data_Cleaned_Final_Version.csv - The final, cleaned, and feature-engineered dataset used for all analyses and visualizations. It includes merged economic variables, outlier treatment, and derived metrics.
+9) SWFL_Data_Cleaned_Final_Version.csv - The final, cleaned, and feature-engineered dataset used for all analyses and visualizations. It includes merged economic variables, outlier treatment, and derived metrics.
 
 🌟 Cont'd
 
