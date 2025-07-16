@@ -29,6 +29,8 @@ This repository covers the end-to-end workflow for generating actionable real es
 ### 📄 Report
 Please refer to the _SouthWest Florida Quantitaive Analysis of Urban Housing Markets.pdf_ for the complete final report of my analysis. This provides more context and articulates the challenges and results faced when working on this project. 
 
+### App
+From the published shiny app please check it out here -=> https://chris-jose-castaneda.shinyapps.io/SWFL_Quant_Analysis/
 
 ### 🌟 Cont'd
 
