@@ -34,12 +34,6 @@ From the published shiny app please check it out here -=> https://chris-jose-cas
 
 ### 🌟 Cont'd
 
-Please feel free to use this repository for a data science or quantitative research projects. Don't forget to ⭐ this repository :)
-
-
-
-Best, 
-
-Chris 
+Open for contributions!
 
 
